@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="tipinfo" prefHeight="403.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sura.compare.action.CompareSystem"
+>
+    <opaqueInsets>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="30.0"/>
+    </opaqueInsets>
+    <children>
+        <ImageView fitHeight="250.0" fitWidth="346.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@tip.png"/>
+            </image>
+        </ImageView>
+        <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="25.0" layoutY="14.0" prefHeight="161.0"
+               prefWidth="323.0" text="提示信息:"/>
+    </children>
+</AnchorPane>

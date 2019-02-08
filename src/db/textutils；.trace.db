@@ -1,0 +1,32 @@
+2018-11-14 11:12:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:13:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:15:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "keyname" not found [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3174)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3247)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:310)
+	at com.sura.compare.service.CompareTextService.loadSystemDb(CompareTextService.java:187)
+	at com.sura.compare.service.CompareTextService.loadcompareModel(CompareTextService.java:170)
+	at com.sura.compare.service.CompareTextService.main(CompareTextService.java:204)
+2018-11-14 11:15:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:22:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:34:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:35:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:35:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sura.Controller">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="工程">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showCompare" text="表格比对" />
+                        <MenuItem fx:id="exportresult" mnemonicParsing="false" onAction="#exportresult" text="导出结果" />
+                        <MenuItem mnemonicParsing="false" text="退出" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="编辑">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="基础配置" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="关于">
+                    <items>
+                        <MenuItem fx:id="showabout" mnemonicParsing="false" onAction="#showAbout" text="关于" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <Pane fx:id="centershow" prefHeight="369.0" prefWidth="600.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </Pane>
+    </children>
+</VBox>

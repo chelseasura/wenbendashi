@@ -1,0 +1,43 @@
+2018-11-14 11:39:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:43:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:45:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from KEYWORDDICT order by ordernum [42102-197]
+2018-11-14 11:46:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from public.KEYWORDDICT  [42102-197]
+2018-11-14 11:46:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from public.KEYWORDDICT ; [42102-197]
+2018-11-14 11:48:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Schema "public" not found; SQL statement:
+select keyname,keyvalue from public.KEYWORDDICT  [90079-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.getSchema(Parser.java:701)
+	at org.h2.command.Parser.getSchema(Parser.java:707)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1388)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2138)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2287)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:2133)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1946)
+	at org.h2.command.Parser.parseSelect(Parser.java:1919)
+	at org.h2.command.Parser.parsePrepared(Parser.java:463)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:78)
+	at com.sura.compare.service.CompareTextService.loadSystemDb(CompareTextService.java:186)
+	at com.sura.compare.service.CompareTextService.loadcompareModel(CompareTextService.java:170)
+	at com.sura.compare.service.CompareTextService.main(CompareTextService.java:205)
+2018-11-14 11:48:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "KEYWORDDICT" not found; SQL statement:
+select keyname,keyvalue from PUBLIC.KEYWORDDICT  [42102-197]

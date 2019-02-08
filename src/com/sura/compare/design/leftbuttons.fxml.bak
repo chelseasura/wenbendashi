@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300"
+      prefWidth="220" style="-fx-background-color: rgb(30, 21, 28);" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox prefHeight="300" prefWidth="140">
+            <children>
+                <ChoiceBox fx:id="comparetypechoice" prefHeight="60" prefWidth="140"
+                           style="-fx-background-color: rgb(43, 48, 80);" VBox.vgrow="ALWAYS">
+                    <effect>
+                        <InnerShadow color="#4d4082"/>
+                    </effect>
+                    <opaqueInsets>
+                        <Insets top="10.0"/>
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </ChoiceBox>
+                <Group>
+                    <children>
+                        <Slider id="priciousslide" blendMode="HARD_LIGHT" max="1.0" opacity="0.98" prefHeight="80"
+                                prefWidth="140">
+                            <opaqueInsets>
+                                <Insets left="10.0" top="10.0"/>
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                            <effect>
+                                <Lighting specularConstant="1.35">
+                                    <bumpInput>
+                                        <Shadow height="127.25" radius="76.0275" width="178.86"/>
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant color="#1ad9cd"/>
+                                    </light>
+                                </Lighting>
+                            </effect>
+                        </Slider>
+                        <Label prefHeight="20.0" prefWidth="140.0" text="比对文本进度" textOverrun="WORD_ELLIPSIS"
+                               wrapText="true">
+                            <textFill>
+                                <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                    <stops>
+                                        <Stop color="#2f0606"/>
+                                        <Stop color="WHITE" offset="1.0"/>
+                                    </stops>
+                                </RadialGradient>
+                            </textFill>
+                        </Label>
+                    </children>
+                    <effect>
+                        <DropShadow radius="29.7325" width="99.93"/>
+                    </effect>
+                    <VBox.margin>
+                        <Insets bottom="30.0" top="20.0"/>
+                    </VBox.margin>
+                </Group>
+                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0"
+                        style="-fx-background-color: rgb(43, 48, 80);" text="选择比对文件" textFill="#d31a1a">
+                    <opaqueInsets>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="40.0"/>
+                    </opaqueInsets>
+                </Button>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </opaqueInsets>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </VBox>
+        <Button mnemonicParsing="false" prefHeight="300.0" prefWidth="70.0"
+                style="-fx-background-color: rgb(43, 48, 80);" text="开始" textFill="#d31414">
+            <opaqueInsets>
+                <Insets top="10.0"/>
+            </opaqueInsets>
+        </Button>
+    </children>
+    <effect>
+        <Lighting diffuseConstant="1.31" specularConstant="1.49" specularExponent="26.19" surfaceScale="2.93">
+            <bumpInput>
+                <Shadow/>
+            </bumpInput>
+            <light>
+                <Light.Distant azimuth="122.14"/>
+            </light>
+        </Lighting>
+    </effect>
+    <opaqueInsets>
+        <Insets top="10.0"/>
+    </opaqueInsets>
+</HBox>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="360.0" style="-fx-background-color: rgb(42, 34, 201);" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <effect>
+        <DropShadow color="#c6da13" height="10.54" radius="41.3575" spread="0.76" width="10.54">
+            <input>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </input>
+        </DropShadow>
+    </effect>
+    <opaqueInsets>
+        <Insets top="20.0" />
+    </opaqueInsets>
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" opacity="0.91" prefHeight="280.0" prefWidth="336.0" spacing="20.0">
+            <children>
+                <Label text="提示信息:_" textFill="#f8f53e">
+                    <opaqueInsets>
+                        <Insets bottom="10.0" top="10.0" />
+                    </opaqueInsets>
+                    <effect>
+                        <DropShadow height="136.36" radius="12.00" spread="0.11" width="50.36">
+                            <input>
+                                <Reflection bottomOpacity="0.23" fraction="1.0" topOpacity="0.62" />
+                            </input>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Label fx:id="tishixinxi" prefHeight="80" text="提示信息" textFill="#e1f80e" wrapText="true">
+                    <opaqueInsets>
+                        <Insets bottom="10.0" top="10.0" />
+                    </opaqueInsets>
+                </Label>
+                <Label text="进度信息:_" textFill="#11eda8">
+                    <opaqueInsets>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </opaqueInsets>
+                    <effect>
+                        <DropShadow height="136.36" radius="12.00" spread="0.11" width="50.36">
+                            <input>
+                                <Reflection bottomOpacity="0.23" fraction="1.0" topOpacity="0.62" />
+                            </input>
+                        </DropShadow>
+                    </effect>
+                </Label>
+                <Label text="进度信息" textFill="#21c337">
+                    <opaqueInsets>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </opaqueInsets>
+                </Label>
+                <Label text="操作结果:_" textFill="#eb0909">
+                    <effect>
+                        <DropShadow height="136.36" radius="12.00" spread="0.11" width="50.36">
+                            <input>
+                                <Reflection bottomOpacity="0.23" fraction="1.0" topOpacity="0.62" />
+                            </input>
+                        </DropShadow>
+                    </effect>
+                    <opaqueInsets>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </opaqueInsets>
+                </Label>
+                <Label text="操作结果" textFill="#dd0f0f">
+                    <opaqueInsets>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </opaqueInsets>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
