@@ -1,7 +1,9 @@
 # wenbendashi
 文本大师，一个JAVAFX开发的跨平台可用的EXCEL，CSV列模糊比对工具
 
-https://github.com/chelseasura/wenbendashi/blob/master/screenshot.png
+
+
+![avatar](https://github.com/chelseasura/wenbendashi/blob/master/screenshot.png)
 
 ### 使用介绍
     本软件可以比对CSV文件或者TXT文件，以,号隔开的文本。XLS，XLSX电子表格前两个SHEET的第一列，且自动合并两个表格。
